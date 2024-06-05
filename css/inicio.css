@@ -100,7 +100,7 @@ nav {
 .container-main {
     width: 100%;
     height: 1160px;
-    background-image: url(/images/imagem-centro.png);
+    background-image: url("/images/imagem-fundo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,17 +123,17 @@ nav {
 
 
 
-.container-footer {
+.container-imagem {
     width: 100%;
     height: 600px;
-    background: rgb(0,181,198);
-    background: linear-gradient(163deg, rgba(0,181,198,1) 10%, rgba(0,152,174,1) 29%, rgba(0,113,143,1) 54%, rgba(0,82,119,1) 100%, rgba(0,166,185,1) 100%);
+    background: rgb(0,166,185);
+    background: linear-gradient(167deg, rgba(0,166,185,1) 0%, rgba(0,181,198,1) 10%, rgba(0,152,174,1) 29%, rgba(0,123,151,1) 43%, rgba(0,113,143,1) 49%, rgba(0,82,119,1) 66%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.container-footer input {
+.container-imagem input {
     width: 380px;
     height: 36px;
     border: none;
@@ -145,7 +145,7 @@ nav {
 }
 
 
-.container-footer input[type="text"]::placeholder {
+.container-imagem input[type="text"]::placeholder {
     color: #5D787C;
 }
 
@@ -176,3 +176,70 @@ nav {
     top: 10px;
     left: 12px
    } 
+
+
+.footer {
+    width: 100%;
+    height: 180px;
+    background-color: #012842;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+    font-size: 40px;
+}
+
+
+.footer-li {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-right: 36px
+}
+
+
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.footer-email {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.footer-p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.footer-sociais {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-sociais h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
