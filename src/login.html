@@ -9,30 +9,32 @@
 </head>
 
 <body>
-    <form action="" class="form">
+    <form id="loginForm" class="form">
         <div class="container">
-            <h1>LOGIN</h1>
+            <h1 class="titulo-login">LOGIN</h1>
             <div class="input">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                <label for="loginEmail">Email</label>
+                <input type="email" name="email" id="loginEmail" placeholder="exemplo@gmail.com" required>
             </div>
             <br>
             <div class="input">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Insira sua senha">
+                <label for="loginPassword">Senha</label>
+                <input type="password" name="password" id="loginPassword" placeholder="Insira sua senha" required>
             </div>
+            <p id="loginError" class="error"></p>
             <br>
             <div class="botao">
-                <a href="">Esqueceu sua senha?</a>
-                <button>Entrar</button>
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="submit">Entrar</button>
             </div>
+            
             <div class="linha"></div>
             <div class="cadastro">
-                <p>Não tem uma conta?</p>
-                <a href="./cadastro.html">Cadastre-se</a>
+                <p>Não tem uma conta?</p>
+                <a href="./index.html">Cadastre-se</a>
             </div>
         </div>
     </form>
+    <script src="/js/login.js"></script>
 </body>
-
 </html>
