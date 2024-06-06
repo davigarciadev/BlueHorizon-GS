@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/solucao.css">
-    <title>Blue Horizon</title>
+    <title>Image Slider with Text</title>
+    <link rel="stylesheet" href="/css/locais.css">
 </head>
-
 <body>
+    <section class="principal">
     <header>
         <nav class="menu">
 
@@ -36,24 +35,47 @@
             </ul>
 
             <li class="itens-li">
-                <a href="#">sing in</a>
+                <a href="#"></a>sing in</a>
                 <img src="/images/logo.png" alt="" class="logo-sign">
             </li>
 
         </nav>
     </header>
-
-    <section class="container-nav">
-        <h1 class="titulo-problema">QUAL PROBLEMA QUE A <br> SOLUÇÃO IRÁ RESOLVER</h1>
-        <div class="p-problema">
-            <p>Os principais problemas que a solução irá resolver são a poluição <br> maritíma causada pela presença de
-                poluentes químicos, resíduos <br> plásticos que afetam a vida marinha e a qualidade da água.</p>
-
-            <p>E a falta de concientização ambiental onde muitas pessoas <br> desconhecem a qualidade da água e não se
-                envolvem ativamente na <br> preservação do ambiente marinho.</p>
+    <div class="main">
+        <h2>LOCAIS DE DESCARTE</h2>
+        <div class="slider">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <div class="text">
+                        <p>Ecoponto
+                        lugar destinado a coleta e descarte de lixo reciclavél<br>
+                        Localização: Rua dos passáros, nº 123</p>
+                        <a href="https://www.google.com/maps" target="_blank" class="map-button">SEGUIR NO MAPA</a>
+                    </div>
+                    <img src="/images/local 1.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <p>Ecoponto
+                            lugar destinado a coleta e descarte de lixo reciclavél <br>Localização: Rua limpida, nº 456</p>
+                        <a href="https://www.google.com/maps" target="_blank" class="map-button">SEGUIR NO MAPA</a>
+                </div>
+                    <img src="/images/local 2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <div class="text">
+                        <p>Ecoponto
+                            lugar destinado a coleta e descarte de lixo reciclavél<br>
+                            Localização: Rua da recliclagem, nº 789</p>
+                        <a href="https://www.google.com/maps" target="_blank" class="map-button">SEGUIR NO MAPA</a>
+                    </div>
+                    <img src="/images/local 3.jpg" alt="Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-    </section>
-
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
@@ -69,16 +91,14 @@
             </li>
 
             <ul class="footer-sociais">
-                <h2>Redes <br>sociais</h2>
+                <h3>Redes <br>sociais</h3>
                 <i class="gg-instagram"></i>
             </ul>
 
         </div>
     </footer>
 
-
-
-    <script href="./js/script.js"></script>
+</section>
+    <script src="/js/script.js"></script>
 </body>
-
 </html>
