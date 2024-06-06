@@ -29,6 +29,12 @@ nav {
     color: #fff;
 }
 
+
+.menu li {
+    list-style: none;
+}
+
+
 .logo-sign {
     width: 30px;
     height: 30px;
@@ -52,6 +58,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     gap: 440px;
+
 }
 
 
@@ -62,6 +69,17 @@ nav {
     align-items: center;
 }
 
+
+.li-secoes {
+    margin-left: 200px;
+}
+
+
+.li-inicio {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
 
 
 .itens-li a{
