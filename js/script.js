@@ -74,3 +74,42 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
             window.location.href = './login.html';
 });
 
+let indiceAtual = 0;
+        const imagensBackground = [
+            'imagem1.jpg',
+            'imagem2.jpg',
+            'imagem3.jpg'
+        ];
+
+        const containerMain = document.getElementById('containerMain');
+        const tituloMain = document.querySelector('.titulo-main');
+
+        function trocarImagem(n) {
+            indiceAtual += n;
+            if (indiceAtual >= imagensBackground.length) {
+                indiceAtual = 0;
+            } else if (indiceAtual < 0) {
+                indiceAtual = imagensBackground.length - 1;
+            }
+            const imagemAtual = imagensBackground[indiceAtual];
+            containerMain.style.backgroundImage = `url(${imagemAtual})`;
+            // Atualiza o texto conforme a imagem atual (opcional)
+            atualizarTexto(imagemAtual);
+        }
+
+        function atualizarTexto(imagem) {
+            switch (imagem) {
+                case 'imagem1.jpg':
+                    tituloMain.innerHTML = 'Texto para a Imagem 1';
+                    break;
+                case 'imagem2.jpg':
+                    tituloMain.innerHTML = 'Texto para a Imagem 2';
+                    break;
+                case 'imagem3.jpg':
+                    tituloMain.innerHTML = 'Texto para a Imagem 3';
+                    break;
+                default:
+                    tituloMain.innerHTML = 'Texto padrão';
+                    break;
+            }
+        }

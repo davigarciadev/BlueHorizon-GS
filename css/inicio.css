@@ -8,6 +8,7 @@
 
 body {
     font-family: 'karma', sans-serif;
+    flex-wrap: wrap;
 }
 
 
@@ -25,6 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #012842;
     color: #fff;
 }
@@ -151,6 +153,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 380px;
     background: rgb(1,40,66);
@@ -171,9 +174,9 @@ nav {
 .container-main {
     background-color: #f0f0f0;
     background-image: url(/images/imagem-fundo.png);
-    width: 100%;
+    color: #fff;
     text-align: center;
-    padding: 50px 0;
+    padding: 200px 0;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -193,6 +196,7 @@ nav {
     padding: 10px;
     border: none;
     outline: none;
+    font-size: 20px;
 }
 .arrow.left {
     left: 10px;
@@ -202,15 +206,16 @@ nav {
 }
 
 
-
 .container-imagem {
-    width: 617;
+
+    width: 100%;
     height: 700px;
     background: rgb(0,166,185);
     background: linear-gradient(167deg, rgba(0,166,185,1) 0%, rgba(0,181,198,1) 10%, rgba(0,152,174,1) 29%, rgba(0,123,151,1) 43%, rgba(0,113,143,1) 49%, rgba(0,82,119,1) 66%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 
@@ -229,7 +234,6 @@ nav {
     width: 570px;
     margin-right: 100px;
     margin-top: 60px;
-    z-index: 2;
 
 }
 
@@ -238,10 +242,27 @@ nav {
     margin-top: 140px;
 }
 
-
-
 .container-imagem input[type="text"]::placeholder {
     color: #5D787C;
+    
+}
+
+
+.search-container {
+    position: relative;    
+}
+
+.search-container input[type="text"] {
+    padding-right: 30px;
+}
+
+
+.search-container .gg-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 24px;
 }
 
 
@@ -256,6 +277,7 @@ nav {
     border-radius: 100%;
     margin-right: 10px;
     margin-top: 68px;
+    cursor: pointer;
    }
    
    .gg-search::after {
@@ -287,6 +309,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
 }
 
