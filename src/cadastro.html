@@ -9,42 +9,39 @@
 </head>
 
 <body>
-    <form action="" class="form">
+    <form id="signupForm" class="form">
         <div class="container">
             <h1 class="titulo-login">CADASTRO</h1>
-
             <div class="input">
-                <label for="email">Email para cadastro</label>
-                <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                <label for="signupEmail">Email para cadastro</label>
+                <input type="email" name="email" id="signupEmail" placeholder="exemplo@gmail.com" required>
             </div>
             <br>
-
             <div class="input-password">
                 <div class="input">
-                    <label for="password">Crie uma senha</label>
-                    <input type="password" name="password" id="password" placeholder="Insira sua senha">
+                    <label for="signupPassword">Crie uma senha</label>
+                    <input type="password" name="password" id="signupPassword" placeholder="Insira sua senha" required>
                 </div>
                 <div class="input">
-                    <label for="password">Confirme a senha</label>
-                    <input type="password" name="password" id="password" placeholder="Insira sua senha">
+                    <label for="confirmPassword">Confirme a senha</label>
+                    <input type="password" name="password" id="confirmPassword" placeholder="Insira sua senha" required>
                 </div>
+            <p id="signupError" class="error"></p>
             </div>
-
             <br>
             <div class="botao">
                 <a href="">Esqueceu sua senha?</a>
-                <button>Entrar</button>
+                <button type="submit">Entrar</button>
             </div>
-
+            
             <div class="linha"></div>
-
             <div class="cadastro">
-                <p>Ja possui uma conta?</p>
+                <p>Já possui uma conta?</p>
                 <a href="./login.html">Conecte-se</a>
             </div>
-
         </div>
     </form>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
