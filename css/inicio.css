@@ -8,6 +8,7 @@
 
 body {
     font-family: 'karma', sans-serif;
+    flex-wrap: wrap;
 }
 
 
@@ -25,6 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #012842;
     color: #fff;
 }
@@ -151,6 +153,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 380px;
     background: rgb(1,40,66);
@@ -179,6 +182,7 @@ nav {
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 40px;
 }
 
@@ -196,12 +200,13 @@ nav {
 
 .container-imagem {
     width: 100%;
-    height: 600px;
+    height: 900px;
     background: rgb(0,166,185);
     background: linear-gradient(167deg, rgba(0,166,185,1) 0%, rgba(0,181,198,1) 10%, rgba(0,152,174,1) 29%, rgba(0,123,151,1) 43%, rgba(0,113,143,1) 49%, rgba(0,82,119,1) 66%);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .container-imagem input {
@@ -221,6 +226,24 @@ nav {
 }
 
 
+.search-container {
+    position: relative;    
+}
+
+.search-container input[type="text"] {
+    padding-right: 30px; /* Espaço para o ícone */
+}
+
+
+.search-container .gg-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 24px;
+}
+
+
 .gg-search {
     box-sizing: border-box;
     position: relative;
@@ -232,6 +255,7 @@ nav {
     border-radius: 100%;
     margin-right: 10px;
     margin-top: 68px;
+    cursor: pointer;
    }
    
    .gg-search::after {
@@ -262,6 +286,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 100%;
 }
 
