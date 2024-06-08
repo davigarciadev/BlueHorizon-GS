@@ -16,7 +16,7 @@ nav {
     width: 100%;
     height: 41px;
     display: flex;
-    
+
 }
 
 
@@ -84,7 +84,7 @@ nav {
 }
 
 
-.itens-li a{
+.itens-li a {
     color: #fff;
     text-decoration: none;
 }
@@ -105,7 +105,7 @@ nav {
     position: absolute;
     background-color: rgba(160, 163, 163, 0.694);
     min-width: 400px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     animation: fadeIn 0.3s ease-in-out;
     list-style: none;
@@ -121,8 +121,9 @@ nav {
     align-items: center;
 }
 
-.dropdown-content a:hover {   
-    background-color: rgba(160, 163, 163, 0.694);;
+.dropdown-content a:hover {
+    background-color: rgba(160, 163, 163, 0.694);
+    ;
     border-radius: 16px;
 }
 
@@ -137,6 +138,7 @@ nav {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -156,8 +158,8 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     height: 380px;
-    background: rgb(1,40,66);
-    background: linear-gradient(180deg, rgba(1,40,66,1) 35%, rgba(4,56,91,1) 100%);
+    background: rgb(1, 40, 66);
+    background: linear-gradient(180deg, rgba(1, 40, 66, 1) 35%, rgba(4, 56, 91, 1) 100%);
     color: #fff;
     font-size: 24px;
     gap: 16px;
@@ -182,10 +184,18 @@ nav {
     position: relative;
     overflow: hidden;
 }
+
+
+
 .titulo-main {
     font-size: 36px;
     margin-bottom: 20px;
+    height: 482px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -198,9 +208,11 @@ nav {
     outline: none;
     font-size: 20px;
 }
+
 .arrow.left {
     left: 10px;
 }
+
 .arrow.right {
     right: 10px;
 }
@@ -209,8 +221,8 @@ nav {
 .container-imagem {
     width: 100%;
     height: 900px;
-    background: rgb(0,166,185);
-    background: linear-gradient(167deg, rgba(0,166,185,1) 0%, rgba(0,181,198,1) 10%, rgba(0,152,174,1) 29%, rgba(0,123,151,1) 43%, rgba(0,113,143,1) 49%, rgba(0,82,119,1) 66%);
+    background: rgb(0, 166, 185);
+    background: linear-gradient(167deg, rgba(0, 166, 185, 1) 0%, rgba(0, 181, 198, 1) 10%, rgba(0, 152, 174, 1) 29%, rgba(0, 123, 151, 1) 43%, rgba(0, 113, 143, 1) 49%, rgba(0, 82, 119, 1) 66%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -287,7 +299,7 @@ nav {
     width: 100px;
 }
 
-.relogio{
+.relogio {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -337,7 +349,7 @@ span#horas {
     text-decoration: underline;
 }
 
-#termometro{
+#termometro {
     width: 600px;
     height: 700px;
     /* margin-right: 100px;
@@ -345,19 +357,19 @@ span#horas {
     margin: 150px 0 0 0;
 }
 
-#line{
-    width:5.5px;
+#line {
+    width: 5.5px;
     margin-top: 140px;
 }
 
 .container-imagem input[type="text"]::placeholder {
     color: #5D787C;
-    
+
 }
 
 
 .search-container {
-    position: relative;    
+    position: relative;
     margin-right: 280px;
 }
 
@@ -387,7 +399,7 @@ span#horas {
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs, 1));
     width: 16px;
     height: 16px;
     border: 2px solid;
@@ -395,9 +407,9 @@ span#horas {
     margin-right: 10px;
     margin-top: 68px;
     cursor: pointer;
-   }
-   
-   .gg-search::after {
+}
+
+.gg-search::after {
     content: "";
     display: block;
     box-sizing: border-box;
@@ -409,7 +421,7 @@ span#horas {
     transform: rotate(-45deg);
     top: 10px;
     left: 12px
-   } 
+}
 
 
 
@@ -476,7 +488,8 @@ span#horas {
 .footer-sociais h2 {
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
 

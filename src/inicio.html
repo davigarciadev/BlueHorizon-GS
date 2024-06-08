@@ -56,10 +56,17 @@
 
 
     <section class="container-main" id="containerMain">
-        <h1 class="titulo-main">Conheça <br>sobre a Blue <br> Horizon</h1>
-        <div class="arrow left" onclick="trocarImagem(-1)">&#10094;</div>
-        <div class="arrow right" onclick="trocarImagem(1)">&#10095;</div>
+        <ul>
+            <li>
+                <h1 class="titulo-main">Conheça <br>sobre a Blue <br> Horizon</h1>
+            </li>
+        </ul>
+
+        <div class="arrow left" onclick="trocarTexto(-1)">&#10094;</div>
+        <div class="arrow right" onclick="trocarTexto(1)">&#10095;</div>
+
     </section>
+
 
     <section class="container-imagem">
         <div class="search-localidade">
@@ -126,6 +133,31 @@
 
 
     <script src="./js/script.js"></script>
+    <script>
+        const textos = [
+            "Conheça <br>sobre a Blue <br> Horizon",
+            "O projeto consiste na implementação de<br> sensores avançados em boias de sinalização<br> marítima para monitorar em tempo real a <br>qualidade da água em áreas costeiras. Esses<br> dados são disponibilizados através de um <br>aplicativo público, incentivando a coleta de<br> resíduos e promovendo a conscientização<br> ambiental entre comunidades locais e<br> visitantes. ",
+        ];
+        let currentIndex = 0;
+        const titulo = document.querySelector('.titulo-main');
+
+        function exibirTexto() {
+            titulo.innerHTML = textos[currentIndex];
+        }
+
+        function trocarTexto(delta) {
+            currentIndex += delta;
+            if (currentIndex < 0) {
+                currentIndex = textos.length - 1;
+            } else if (currentIndex >= textos.length) {
+                currentIndex = 0;
+            }
+            exibirTexto();
+        }
+
+        exibirTexto();
+    </script>
+
 </body>
 
 </html>
